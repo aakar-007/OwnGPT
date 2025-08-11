@@ -1,5 +1,8 @@
 # OwnGPT
 
+vb3lhg-codex/create-owngpt-github-repository-and-system
+y2gdip-codex/create-owngpt-github-repository-and-system
+main
 OwnGPT is a minimal full-stack example built mostly with Python. A FastAPI app serves a simple web chat interface and proxies to a vLLM server hosting `gpt-oss-120b`.
 
 ## Features
@@ -7,8 +10,12 @@ OwnGPT is a minimal full-stack example built mostly with Python. A FastAPI app s
 - Server Sent Events (SSE) token streaming with a **Stop** button and Markdown rendering
 - `/api/chat` and `/api/models` endpoints protected by `x-own-key`
 - Dockerfile and `docker-compose.yml` for local development
+vb3lhg-codex/create-owngpt-github-repository-and-system
 - Example `.env` files
 - Kubernetes manifest for deploying the backend
+main
+- Example `.env` files
+main
 - Helm values for deploying vLLM on EKS
 - Terraform skeleton for provisioning VPC and EKS
 
@@ -22,12 +29,17 @@ OwnGPT is a minimal full-stack example built mostly with Python. A FastAPI app s
    ```bash
    docker-compose up --build
    ```
+vb3lhg-codex/create-owngpt-github-repository-and-system
+y2gdip-codex/create-owngpt-github-repository-and-system
+main
 3. Open http://localhost:8000 and chat away!
 
 The backend expects requests to include `x-own-key` header matching `OWN_API_KEY`. The included web page uses this value automatically.
 
 ## Development
 
+vb3lhg-codex/create-owngpt-github-repository-and-system
+main
 ### Backend
 ```bash
 cd backend
@@ -36,12 +48,18 @@ pip install -r requirements.txt
 uvicorn main:app --reload
 ```
 
+vb3lhg-codex/create-owngpt-github-repository-and-system
 Then open [http://localhost:8000](http://localhost:8000).
 
+y2gdip-codex/create-owngpt-github-repository-and-system
+Then open [http://localhost:8000](http://localhost:8000).
+main
+main
 ### Terraform & Helm
 - `infra/terraform` contains a skeleton for a VPC and EKS cluster using popular community modules.
 - `deploy/helm/vllm-values.yaml` holds minimal values for deploying vLLM with Helm.
 
+vb3lhg-codex/create-owngpt-github-repository-and-system
 ## Deploying on AWS
 
 1. **Provision infrastructure**
@@ -84,5 +102,6 @@ Then open [http://localhost:8000](http://localhost:8000).
    ```
    Use the external IP to reach the chat UI.
 
+main
 ## License
 MIT
