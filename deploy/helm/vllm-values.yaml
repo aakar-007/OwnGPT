@@ -1,0 +1,11 @@
+# Minimal values for deploying vLLM on EKS
+image:
+  repository: vllm/vllm-openai
+  tag: latest
+model:
+  name: gpt-oss-120b
+gpu:
+  count: 1
+service:
+  type: LoadBalancer
+  port: 80
