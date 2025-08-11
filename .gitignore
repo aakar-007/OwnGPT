@@ -1,8 +1,8 @@
-node_modules
-.next
+y2gdip-codex/create-owngpt-github-repository-and-system
 .env
-.env.local
-__pycache__
+.venv
+__pycache__/
 *.pyc
-.terraform
+.terraform/
+main
 terraform.tfstate*

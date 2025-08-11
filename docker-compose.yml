@@ -1,16 +1,7 @@
 version: "3.9"
 services:
-  frontend:
-    build: ./frontend
-    ports:
-      - "3000:3000"
-    env_file:
-      - .env
-    environment:
-      - NEXT_PUBLIC_API_URL=http://localhost:8000
-      - NEXT_PUBLIC_OWN_KEY=${OWN_API_KEY}
-    depends_on:
-      - backend
+y2gdip-codex/create-owngpt-github-repository-and-system
+main
   backend:
     build: ./backend
     ports:
