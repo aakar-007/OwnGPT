@@ -8,6 +8,7 @@ OwnGPT is a minimal full-stack example built mostly with Python. A FastAPI app s
 - `/api/chat` and `/api/models` endpoints protected by `x-own-key`
 - Dockerfile and `docker-compose.yml` for local development
 - Example `.env` files
+- Kubernetes manifest for deploying the backend
 - Helm values for deploying vLLM on EKS
 - Terraform skeleton for provisioning VPC and EKS
 
