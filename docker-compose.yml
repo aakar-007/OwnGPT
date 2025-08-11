@@ -1,6 +1,7 @@
 version: "3.9"
 services:
-y2gdip-codex/create-owngpt-github-repository-and-system
+vb3lhg-codex/create-owngpt-github-repository-and-system
+
 main
   backend:
     build: ./backend

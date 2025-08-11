@@ -1,0 +1,36 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: owngpt-backend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: owngpt-backend
+  template:
+    metadata:
+      labels:
+        app: owngpt-backend
+    spec:
+      containers:
+      - name: backend
+        image: REPLACE_ME_ECR/owngpt-backend:latest
+        ports:
+        - containerPort: 8000
+        env:
+        - name: OWN_API_KEY
+          value: dev-key
+        - name: VLLM_API_BASE
+          value: http://vllm:8000
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: owngpt-backend
+spec:
+  type: LoadBalancer
+  selector:
+    app: owngpt-backend
+  ports:
+  - port: 80
+    targetPort: 8000

@@ -1,8 +1,12 @@
+vb3lhg-codex/create-owngpt-github-repository-and-system
 y2gdip-codex/create-owngpt-github-repository-and-system
+main
 .env
 .venv
 __pycache__/
 *.pyc
 .terraform/
+vb3lhg-codex/create-owngpt-github-repository-and-system
+main
 main
 terraform.tfstate*
