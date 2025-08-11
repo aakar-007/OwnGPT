@@ -1,6 +1,8 @@
+y2gdip-codex/create-owngpt-github-repository-and-system
 .env
 .venv
 __pycache__/
 *.pyc
 .terraform/
+main
 terraform.tfstate*

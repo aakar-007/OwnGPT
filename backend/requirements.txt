@@ -2,4 +2,6 @@ fastapi==0.109.0
 uvicorn[standard]==0.27.0
 httpx==0.25.2
 python-dotenv==1.0.0
+y2gdip-codex/create-owngpt-github-repository-and-system
 jinja2==3.1.2
+main
